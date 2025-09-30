@@ -1,0 +1,17 @@
+[project]
+name = "surprise_travel"
+version = "0.1.0"
+description = "trip surprise using crewAI"
+authors = [{name = "Gabriel Casemiro", email = "gabriel@casemiro.com"}]
+language = "en_US"
+requires-python = ">=3.10,<=3.13"
+dependencies = [
+    "crewai[tools]>=0.152.0",
+    "crewai-tools>=0.58.0",
+    "streamlit>=1.29.0",
+    "python-dotenv>=1.0.0",
+]
+
+[project.scripts]
+surprise_travel = "surprise_travel.main:run"
+train = "surprise_travel.main:train"
